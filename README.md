@@ -12,26 +12,34 @@ First, download all files provided.
 
 ### Installing
 
+Note that these tools run using python 3.6.
+
 In order to use the bokeh plotting tool for plot_local_data.py, the following packages need to be installed:
 
     numpy
     pandas
-    bokeh
+    bokeh (version 1.0.1)
     selenium
     phantomjs
     pillow
     nodejs
 
-These packages can be installed at the same time by separating them by a space after the "install" command. For example, to install bokeh and selenium using pip run the following:
+First, you can install the specific version of bokeh using the conda command:
 
 ```
-pip install bokeh selenium
+conda install bokeh=1.0.1
 ```
 
-To install bokeh and selenium using conda, run:
+All packages can be installed at the same time by separating them by a space after the "install" command. For example, to install using conda run the following:
 
 ```
-conda install bokeh selenium
+conda install numpy pandas bokeh=1.0.1 selenium phantomjs pillow nodejs
+```
+
+To install bokeh and selenium using pip, run:
+
+```
+pip install numpy pandas bokeh=1.0.1 selenium phantomjs pillow nodejs
 ```
 
 ## Running the tests
